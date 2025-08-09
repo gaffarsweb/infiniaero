@@ -1,13 +1,11 @@
 import AboutCards from "../components/aboutCard";
 import AboutUs from "../components/aboutUs";
-import CarouselComp from "../components/Carousel";
-import CategoryComp from "../components/categoryComp";
 import ContactDetails from "../components/contactDetails";
+import CarouselComp from "../../src/components/carousel";
 import ContactUs from "../components/contactUs";
 import Footer from "../components/footer";
 import NewProductCards from "../components/newProductCard";
 import SolutionCard from "../components/solutionCard";
-import Link from "next/link";
 
 
 export default function Home() {
