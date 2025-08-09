@@ -13,6 +13,7 @@ export default function ContactUs() {
     });
 
     const [isVisible, setIsVisible] = useState(false);
+    const [loading, setloading] = useState(false);
     const sectionRef = useRef(null);
 
     // Detect when component is in viewport
@@ -36,11 +37,47 @@ export default function ContactUs() {
     };
 
     // Handle form submit
-    const handleSubmit = (e) => {
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log("Form Data:", formData);
+    //     alert("Form submitted!");
+    // };
+
+    // Inside handleSubmit
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form Data:", formData);
-        alert("Form submitted!");
+        setloading(true)
+
+        try {
+            console.log('api called')
+            const res = await fetch("/api/sendEmail", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
+            
+            console.log('res',res)
+            if (res.ok) {
+                alert("Form submitted! Please check your email.");
+                setFormData({
+                    fullName: "",
+                    mobile: "",
+                    email: "",
+                    interest: "",
+                    remark: "",
+                    query: ""
+                });
+            } else {
+                alert("Failed to Submit Details.");
+            }
+        } catch (err) {
+            console.error(err);
+            alert("Something went wrong!");
+        }finally{
+            setloading(false)
+        }
     };
+
 
     return (
         <div ref={sectionRef} className="w-full flex flex-col items-center px-4 py-10 bg-gray-50">
@@ -162,12 +199,13 @@ export default function ContactUs() {
                             {/* Submit Button */}
                             <div className="md:col-span-2">
                                 <motion.button
+                                disabled={loading}
                                     type="submit"
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                     className="w-full bg-black text-white py-3 rounded-md hover:bg-gray-800 transition"
                                 >
-                                    Submit your interest
+                                   {loading ? 'Submitting...': 'Submit your interest'}
                                 </motion.button>
                             </div>
                         </form>
