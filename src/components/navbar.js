@@ -19,9 +19,9 @@ const Navbar = () => {
                         <div className="flex items-center gap-8">
                             <a href="#" className="text-white text-lg font-semibold w-full">
                                 <Image
-                                    width={160}
-                                    height={30}
-                                    className="h-[60px] w-[100px] lg:h-[100px] lg:w-[160px]"
+                                    // width={160}
+                                    // height={30}
+                                    className="h-[40px] py-2 w-[100px] lg:h-[70px] lg:w-[160px]"
                                     src={logo}
                                     alt="Logo"
                                 />

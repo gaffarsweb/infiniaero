@@ -1,6 +1,7 @@
 import React from "react";
 // import footerImg from "../assets/img/footer.png"; // Replace with your uploaded image path
 import logo from "../assets/img/logo.png";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -9,10 +10,10 @@ const Footer = () => {
         {/* Logo and description */}
         <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between gap-6">
           <div className="flex flex-col items-center md:items-start">
-            <img
+            <Image
               src={logo}
               alt="Footer Logo"
-              className="w-28 mb-4"
+              className="w-36 mb-4"
             />
             <p className="text-gray-400 text-sm max-w-sm text-center md:text-left">
               Your trusted partner for all property needs. Buy, sell, or rent —
