@@ -41,7 +41,7 @@ export default function Home() {
                 Drone Solutions Across Industries
               </div>
               <div className="text-sm sm:text-base mt-6 md:mt-10 text-center max-w-4xl mx-auto transition-opacity duration-300 hover:opacity-90">
-                Our advanced UAV technologies deliver innovative drone solutions tailored for each industry's unique challenges,
+                Our advanced UAV technologies deliver innovative drone solutions tailored for each industry unique challenges,
                 enhancing data collection, operational safety, and decision-making across diverse sectors.
               </div>
             </div>
