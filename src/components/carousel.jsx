@@ -7,21 +7,21 @@ import { Carousel } from 'react-responsive-carousel';
 const CarouselComp = () => {
    const [imgData, setImgData]=useState([
     {
-        url:'https://github.com/gaffars712/my-imgs/blob/main/home%20banner%20slider%201.jpeg?raw=true',
+        url:'https://github.com/gaffars712/my-imgs/blob/main/ChatGPT%20Image%20Aug%2024%2C%202025%2C%2002_42_56%20PM.png?raw=true',
         alt:'slider 1'
     },
     {
-        url:'https://github.com/gaffars712/my-imgs/blob/main/home%20banner%20slider%204.jpeg?raw=true',
+        url:'https://github.com/gaffars712/my-imgs/blob/main/ChatGPT%20Image%20Aug%2024%2C%202025%2C%2002_42_56%20PM.png?raw=true',
         alt:'slider 2'
     },
-    {
-        url:'https://github.com/gaffars712/my-imgs/blob/main/home-slider-6.jpeg?raw=true',
-        alt:'slider 3'
-    },
-    {
-        url:'https://github.com/gaffars712/my-imgs/blob/main/home%20banner%20slider%205.jpeg?raw=true',
-        alt:'slider 4'
-    },
+    // {
+    //     url:'https://github.com/gaffars712/my-imgs/blob/main/home-slider-6.jpeg?raw=true',
+    //     alt:'slider 3'
+    // },
+    // {
+    //     url:'https://github.com/gaffars712/my-imgs/blob/main/home%20banner%20slider%205.jpeg?raw=true',
+    //     alt:'slider 4'
+    // },
    ])
     return (
         <div className=' text-black'>

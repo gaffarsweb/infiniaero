@@ -6,6 +6,7 @@ import ContactUs from "../components/contactUs";
 import Footer from "../components/footer";
 import NewProductCards from "../components/newProductCard";
 import SolutionCard from "../components/solutionCard";
+import BankDetails from "../components/BankDetails";
 
 
 export default function Home() {
@@ -15,12 +16,12 @@ export default function Home() {
     {
       image: '',
       title: "Phone",
-      value: "+91 9421995521"
+      value: "+91 80559 95541"
     },
     {
       image: '',
       title: "Email",
-      value: "gaffars712@gmail.com"
+      value: "info@infiniaero.com"
     },
     {
       image: '',
@@ -102,6 +103,9 @@ export default function Home() {
               </div>
 
             </div>
+          </div>
+          <div>
+            <BankDetails/>
           </div>
         </div>
       </div>

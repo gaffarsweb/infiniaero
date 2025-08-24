@@ -55,8 +55,8 @@ export default function ContactUs() {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
             });
-            
-            console.log('res',res)
+
+            console.log('res', res)
             if (res.ok) {
                 alert("Form submitted! Please check your email.");
                 setFormData({
@@ -73,7 +73,7 @@ export default function ContactUs() {
         } catch (err) {
             console.error(err);
             alert("Something went wrong!");
-        }finally{
+        } finally {
             setloading(false)
         }
     };
@@ -84,12 +84,14 @@ export default function ContactUs() {
             {/* Map Section */}
             <div className="w-full max-w-5xl mb-10">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d685.2839105745088!2d75.19294062921702!3d20.007740868857336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9237aaedcc9d%3A0x9fa30164b42cc565!2sOld%20State%20Bank%20Rd%2C%20Khuldabad%2C%20Maharashtra%20431101!5e1!3m2!1sen!2sin!4v1754718318749!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2857.439691958261!2d75.24895599999999!3d19.911529500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb971d90d7932b%3A0x127677349058b0b5!2sInfiniaero%20space%20research%20and%20development!5e1!3m2!1sen!2sin!4v1756022845738!5m2!1sen!2sin"
                     className="w-full h-full border-0"
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>            </div>
+                ></iframe>
+                {/* <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+            </div>
 
             {/* Animated Form */}
             <AnimatePresence>
@@ -199,13 +201,13 @@ export default function ContactUs() {
                             {/* Submit Button */}
                             <div className="md:col-span-2">
                                 <motion.button
-                                disabled={loading}
+                                    disabled={loading}
                                     type="submit"
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                     className="w-full bg-black text-white py-3 rounded-md hover:bg-gray-800 transition"
                                 >
-                                   {loading ? 'Submitting...': 'Submit your interest'}
+                                    {loading ? 'Submitting...' : 'Submit your interest'}
                                 </motion.button>
                             </div>
                         </form>

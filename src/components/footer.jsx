@@ -35,9 +35,10 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold mb-2">Contact</h4>
               <ul className="space-y-1">
-                <li>📞 +91 9421995521</li>
-                <li>📧 info@example.com</li>
-                <li>📍 Aurangabad, Maharashtra</li>
+                <li>📞 +91 80559 95541</li>
+                <li>📧 info@infiniaero.com</li>
+                <li>📍 Survey No 27 plot no 204/205 BG colony </li>
+                <li className="ml-6">   PHASE 2  mitmita Aurangabad 431001</li>
               </ul>
             </div>
           </div>
