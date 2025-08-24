@@ -2,6 +2,8 @@ import React from "react";
 // import footerImg from "../assets/img/footer.png"; // Replace with your uploaded image path
 import logo from "../assets/img/logo.png";
 import Image from "next/image";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -19,6 +21,24 @@ const Footer = () => {
               Your trusted partner for all property needs. Buy, sell, or rent —
               we’ve got you covered.
             </p>
+            <div className="flex space-x-4 mt-4">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-600 transition">
+                <FaFacebookF />
+              </a>
+              <a href="https://www.instagram.com/infiniaerospace.in?igsh=eXpsZTJlMXR6a25l" target="_blank" rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-pink-500 transition">
+                <FaInstagram />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-500 transition">
+                <FaLinkedinIn />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-sky-500 transition">
+                <FaXTwitter  />
+              </a>
+            </div>
           </div>
 
           {/* Links */}
