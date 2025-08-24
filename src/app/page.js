@@ -93,7 +93,7 @@ export default function Home() {
           </div>
           <div id="contactUs">
             <ContactUs />
-            <div className="px-4 sm:px-8 md:px-16 lg:px-32 my-16">
+            <div className="px-4 sm:px-8 md:px-16 lg:px-32 mt-16 mb-8">
               <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {contactDetails.map((i, index) => (
                   <div key={index} className="py-2 mx-1">
@@ -104,7 +104,7 @@ export default function Home() {
 
             </div>
           </div>
-          <div>
+          <div className="mb-5">
             <BankDetails/>
           </div>
         </div>
